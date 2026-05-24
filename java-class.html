@@ -1,0 +1,735 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>类和实例 · Java 学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="胡伟煌">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="java-interface.html" />
+    
+    
+    <link rel="prev" href="java-flow-control.html" />
+    
+
+    
+        <link rel="shortcut icon" href='images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='images/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.ico">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"huweihuang/java-notes","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.huweihuang.com" target="_blank" class="custom-link">胡伟煌的博客</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">数据类型</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="java-var-type.html">
+            
+                <a href="java-var-type.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    数据类型和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="java-collections.html">
+            
+                <a href="java-collections.html">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    数组和集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">流程控制语句</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="java-flow-control.html">
+            
+                <a href="java-flow-control.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    流程控制语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面相对象编程</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="java-class.html">
+            
+                <a href="java-class.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    类和实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="java-interface.html">
+            
+                <a href="java-interface.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    java接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >类和实例</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="1-&#x4EC0;&#x4E48;&#x662F;&#x7C7B;&#xFF08;class&#xFF09;">1. &#x4EC0;&#x4E48;&#x662F;&#x7C7B;&#xFF08;Class&#xFF09;</h1>
+<p>&#x7C7B;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>&#x5BF9;&#x73B0;&#x5B9E;&#x4E8B;&#x7269;&#x7684;&#x62BD;&#x8C61;&#x63CF;&#x8FF0;&#xFF08;&#x5C5E;&#x6027; + &#x884C;&#x4E3A;&#xFF09;</p>
+</blockquote>
+<ul>
+<li><p>&#x5C5E;&#x6027; &#x2192; &#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</li>
+<li><p>&#x884C;&#x4E3A; &#x2192; &#x65B9;&#x6CD5;</p>
+</li>
+</ul>
+<h1 id="2-&#x7C7B;&#x7684;&#x58F0;&#x660E;">2. &#x7C7B;&#x7684;&#x58F0;&#x660E;</h1>
+<h2 id="1&#xFE0F;&#x20E3;-&#x57FA;&#x672C;&#x8BED;&#x6CD5;">1&#xFE0F;&#x20E3; &#x57FA;&#x672C;&#x8BED;&#x6CD5;</h2>
+<pre class="language-"><code class="lang-java">&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26; <span class="token keyword">class</span> &#x7C7B;&#x540D; <span class="token punctuation">{</span>  
+ <span class="token comment">// &#x6210;&#x5458;&#x53D8;&#x91CF;  </span>
+ <span class="token comment">// &#x6784;&#x9020;&#x65B9;&#x6CD5;  </span>
+ <span class="token comment">// &#x6210;&#x5458;&#x65B9;&#x6CD5;  </span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>  
+ <span class="token class-name">String</span> name<span class="token punctuation">;</span>  
+ <span class="token keyword">int</span> age<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="2&#xFE0F;&#x20E3;-&#x547D;&#x540D;&#x89C4;&#x8303;">2&#xFE0F;&#x20E3; &#x547D;&#x540D;&#x89C4;&#x8303;</h2>
+<ul>
+<li><p>&#x7C7B;&#x540D;&#x4F7F;&#x7528; <strong>&#x5927;&#x9A7C;&#x5CF0;</strong></p>
+</li>
+<li><p>&#x4E00;&#x4E2A; Java &#x6587;&#x4EF6;&#x901A;&#x5E38;&#x4E00;&#x4E2A; public &#x7C7B;</p>
+</li>
+<li><p>&#x6587;&#x4EF6;&#x540D;&#x5FC5;&#x987B;&#x4E0E;&#x7C7B;&#x540D;&#x4E00;&#x81F4;</p>
+</li>
+</ul>
+<h1 id="3-&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF08;&#x5C5E;&#x6027;&#xFF09;">3. &#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF08;&#x5C5E;&#x6027;&#xFF09;</h1>
+<p>&#x5B9A;&#x4E49;&#x5728;&#x7C7B;&#x4E2D;&#x3001;&#x65B9;&#x6CD5;&#x5916;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>  
+ <span class="token class-name">String</span> name<span class="token punctuation">;</span>  
+ <span class="token keyword">int</span> age<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><p>&#x6709;&#x9ED8;&#x8BA4;&#x503C;</p>
+</li>
+<li><p>&#x751F;&#x547D;&#x5468;&#x671F;&#x968F;&#x5BF9;&#x8C61;</p>
+</li>
+</ul>
+<p>&#x9ED8;&#x8BA4;&#x503C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td>0</td>
+</tr>
+<tr>
+<td>double</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>&#x5F15;&#x7528;&#x7C7B;&#x578B;</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<h1 id="4-&#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x521D;&#x59CB;&#x5316;">4. &#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x4E0E;&#x521D;&#x59CB;&#x5316;</h1>
+<h2 id="1&#xFE0F;&#x20E3;-&#x521B;&#x5EFA;&#x5BF9;&#x8C61;">1&#xFE0F;&#x20E3; &#x521B;&#x5EFA;&#x5BF9;&#x8C61;</h2>
+<pre class="language-"><code class="lang-java">&#x7C7B;&#x540D; &#x5BF9;&#x8C61;&#x540D; <span class="token operator">=</span> <span class="token keyword">new</span> &#x7C7B;&#x540D;<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+&#x793A;&#x4F8B;&#xFF1A;
+
+<span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<ol>
+<li>&#x5728;&#x5806;&#x5185;&#x5B58;&#x4E2D;&#x5206;&#x914D;&#x7A7A;&#x95F4;  </li>
+<li>&#x6210;&#x5458;&#x53D8;&#x91CF;&#x8D4B;&#x9ED8;&#x8BA4;&#x503C;  </li>
+<li>&#x6267;&#x884C;&#x6784;&#x9020;&#x65B9;&#x6CD5;  </li>
+<li>&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x5F15;&#x7528;</li>
+</ol>
+<h1 id="5-&#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF08;constructor&#xFF09;">5. &#x6784;&#x9020;&#x65B9;&#x6CD5;&#xFF08;Constructor&#xFF09;</h1>
+<p>&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#xFF1A;</p>
+<blockquote>
+<p>&#x521D;&#x59CB;&#x5316;&#x5BF9;&#x8C61;</p>
+</blockquote>
+<h2 id="1&#xFE0F;&#x20E3;-&#x7279;&#x70B9;">1&#xFE0F;&#x20E3; &#x7279;&#x70B9;</h2>
+<ul>
+<li><p>&#x65B9;&#x6CD5;&#x540D;&#x5FC5;&#x987B;&#x4E0E;&#x7C7B;&#x540D;&#x76F8;&#x540C;</p>
+</li>
+<li><p>&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF08;&#x8FDE; void &#x90FD;&#x4E0D;&#x80FD;&#x5199;&#xFF09;</p>
+</li>
+<li><p>&#x53EF;&#x91CD;&#x8F7D;</p>
+</li>
+</ul>
+<h2 id="2&#xFE0F;&#x20E3;-&#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x65B9;&#x6CD5;">2&#xFE0F;&#x20E3; &#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x65B9;&#x6CD5;</h2>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5199;&#xFF0C;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="3&#xFE0F;&#x20E3;-&#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x65B9;&#x6CD5;">3&#xFE0F;&#x20E3; &#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x65B9;&#x6CD5;</h2>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>  
+
+    <span class="token class-name">String</span> name<span class="token punctuation">;</span>  
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>  
+
+    <span class="token keyword">public</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>  
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>  
+    <span class="token punctuation">}</span>  
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token string">&quot;Tom&quot;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="4&#xFE0F;&#x20E3;-&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;">4&#xFE0F;&#x20E3; &#x6784;&#x9020;&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;</h2>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="6-this-&#x5173;&#x952E;&#x5B57;">6. this &#x5173;&#x952E;&#x5B57;</h1>
+<p>&#x8868;&#x793A;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x7528;&#x4E8E;&#xFF1A;</p>
+<ul>
+<li><p>&#x533A;&#x5206;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E0E;&#x5C40;&#x90E8;&#x53D8;&#x91CF;</p>
+</li>
+<li><p>&#x8C03;&#x7528;&#x672C;&#x7C7B;&#x6784;&#x9020;&#x65B9;&#x6CD5;</p>
+</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+</code></pre>
+<h1 id="7-&#x65B9;&#x6CD5;">7. &#x65B9;&#x6CD5;</h1>
+<h2 id="71--&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;">7.1.  &#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;</h2>
+<p>&#x65B9;&#x6CD5;&#x662F;&#x7C7B;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<h3 id="1&#xFE0F;&#x20E3;-&#x57FA;&#x672C;&#x8BED;&#x6CD5;">1&#xFE0F;&#x20E3; &#x57FA;&#x672C;&#x8BED;&#x6CD5;</h3>
+<pre class="language-"><code class="lang-java">&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26; &#x8FD4;&#x56DE;&#x503C;&#x7C7B;&#x578B; &#x65B9;&#x6CD5;&#x540D;<span class="token punctuation">(</span>&#x53C2;&#x6570;&#x5217;&#x8868;<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ &#x65B9;&#x6CD5;&#x4F53;  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="2&#xFE0F;&#x20E3;-&#x793A;&#x4F8B;">2&#xFE0F;&#x20E3; &#x793A;&#x4F8B;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Calculator</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="72-&#x65B9;&#x6CD5;&#x8C03;&#x7528;">7.2. &#x65B9;&#x6CD5;&#x8C03;&#x7528;</h2>
+<h3 id="1&#xFE0F;&#x20E3;-&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;">1&#xFE0F;&#x20E3; &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x8C03;&#x7528;</h3>
+<pre class="language-"><code class="lang-java"><span class="token class-name">Calculator</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token keyword">int</span> result <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="2&#xFE0F;&#x20E3;-&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;">2&#xFE0F;&#x20E3; &#x9759;&#x6001;&#x65B9;&#x6CD5;&#x8C03;&#x7528;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MathUtil</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">square</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> x <span class="token operator">*</span> x<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x8C03;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">int</span> result <span class="token operator">=</span> <span class="token class-name">MathUtil</span><span class="token punctuation">.</span><span class="token function">square</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li><p>&#x4E0D;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;</p>
+</li>
+<li><p>&#x5C5E;&#x4E8E;&#x7C7B;</p>
+</li>
+</ul>
+<h2 id="73-&#x65B9;&#x6CD5;&#x53C2;&#x6570;">7.3. &#x65B9;&#x6CD5;&#x53C2;&#x6570;</h2>
+<p>Java &#x53C2;&#x6570;&#x4F20;&#x9012;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>&#x503C;&#x4F20;&#x9012;</p>
+</blockquote>
+<h3 id="1&#xFE0F;&#x20E3;-&#x57FA;&#x672C;&#x7C7B;&#x578B;">1&#xFE0F;&#x20E3; &#x57FA;&#x672C;&#x7C7B;&#x578B;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ x <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5916;&#x90E8;&#x53D8;&#x91CF;&#x4E0D;&#x53D8;&#x3002;</p>
+<h3 id="2&#xFE0F;&#x20E3;-&#x5F15;&#x7528;&#x7C7B;&#x578B;">2&#xFE0F;&#x20E3; &#x5F15;&#x7528;&#x7C7B;&#x578B;</h3>
+<p>&#x4F20;&#x9012;&#x7684;&#x662F;&#x5730;&#x5740;&#x7684;&#x526F;&#x672C;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token class-name">User</span> u<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ u<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">&quot;Jerry&quot;</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F1A;&#x4FEE;&#x6539;&#x5BF9;&#x8C61;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="74-&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;">7.4. &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x503C;</h2>
+<h3 id="1&#xFE0F;&#x20E3;-&#x6709;&#x8FD4;&#x56DE;&#x503C;">1&#xFE0F;&#x20E3; &#x6709;&#x8FD4;&#x56DE;&#x503C;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ <span class="token keyword">return</span> a <span class="token operator">+</span> b<span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="2&#xFE0F;&#x20E3;-&#x65E0;&#x8FD4;&#x56DE;&#x503C;">2&#xFE0F;&#x20E3; &#x65E0;&#x8FD4;&#x56DE;&#x503C;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+ <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="75-&#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#xFF08;overload&#xFF09;">7.5. &#x65B9;&#x6CD5;&#x91CD;&#x8F7D;&#xFF08;Overload&#xFF09;</h2>
+<p>&#x540C;&#x540D;&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x3002;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>  
+<span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">double</span> a<span class="token punctuation">,</span> <span class="token keyword">double</span> b<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x5224;&#x65AD;&#x6807;&#x51C6;&#xFF1A;</p>
+<ul>
+<li><p>&#x53C2;&#x6570;&#x7C7B;&#x578B;</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#x4E2A;&#x6570;</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#x987A;&#x5E8F;</p>
+</li>
+</ul>
+<p>&#x26A0; &#x8FD4;&#x56DE;&#x503C;&#x4E0D;&#x540C;&#x4E0D;&#x6784;&#x6210;&#x91CD;&#x8F7D;&#x3002;</p>
+<h1 id="8-&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;">8. &#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26;</h1>
+<table>
+<thead>
+<tr>
+<th>&#x4FEE;&#x9970;&#x7B26;</th>
+<th>&#x540C;&#x7C7B;</th>
+<th>&#x540C;&#x5305;</th>
+<th>&#x5B50;&#x7C7B;</th>
+<th>&#x5176;&#x4ED6;</th>
+<th>&#x7C7B;&#x6BD4;GO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>public</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x65B9;&#x6CD5;&#x540D;&#x9996;&#x5B57;&#x6BCD;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x2716;</td>
+<td></td>
+</tr>
+<tr>
+<td>&#x9ED8;&#x8BA4;</td>
+<td>&#x2714;</td>
+<td>&#x2714;</td>
+<td>&#x2716;</td>
+<td>&#x2716;</td>
+<td></td>
+</tr>
+<tr>
+<td>private</td>
+<td>&#x2714;</td>
+<td>&#x2716;</td>
+<td>&#x2716;</td>
+<td>&#x2716;</td>
+<td>&#x65B9;&#x6CD5;&#x540D;&#x9996;&#x5B57;&#x6BCD;&#x5C0F;&#x5199;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="9-&#x7C7B;&#x7684;&#x5B8C;&#x6574;&#x793A;&#x4F8B;">9. &#x7C7B;&#x7684;&#x5B8C;&#x6574;&#x793A;&#x4F8B;</h1>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+    <span class="token comment">// &#x9ED8;&#x8BA4;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+    <span class="token keyword">public</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x81EA;&#x5B9A;&#x4E49;&#x6784;&#x9020;&#x65B9;&#x6CD5;</span>
+    <span class="token keyword">public</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">,</span> <span class="token keyword">int</span> age<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x6211;&#x662F;&quot;</span> <span class="token operator">+</span> name <span class="token operator">+</span> <span class="token string">&quot;&#xFF0C;&#x5E74;&#x9F84;&quot;</span> <span class="token operator">+</span> age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// &#x7C7B;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> age<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>
+    <span class="token comment">// main&#x51FD;&#x6570;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x5B9E;&#x4F8B;&#x5316;&#x7C7B;</span>
+        <span class="token class-name">Person</span> p <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token string">&quot;Alice&quot;</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        p<span class="token punctuation">.</span><span class="token function">introduce</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// &#x65B9;&#x6CD5;&#x8C03;&#x7528;</span>
+        <span class="token keyword">int</span> age <span class="token operator">=</span> p<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="10-&#x7C7B;&#x7684;&#x521D;&#x59CB;&#x5316;&#x987A;&#x5E8F;&#xFF08;&#x8FDB;&#x9636;&#x7406;&#x89E3;&#xFF09;">10. &#x7C7B;&#x7684;&#x521D;&#x59CB;&#x5316;&#x987A;&#x5E8F;&#xFF08;&#x8FDB;&#x9636;&#x7406;&#x89E3;&#xFF09;</h1>
+<p>&#x5BF9;&#x8C61;&#x521B;&#x5EFA;&#x65F6;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF1A;</p>
+<ol>
+<li>&#x9759;&#x6001;&#x53D8;&#x91CF;  </li>
+<li>&#x9759;&#x6001;&#x4EE3;&#x7801;&#x5757;  </li>
+<li>&#x6210;&#x5458;&#x53D8;&#x91CF;  </li>
+<li>&#x6784;&#x9020;&#x4EE3;&#x7801;&#x5757;  </li>
+<li>&#x6784;&#x9020;&#x65B9;&#x6CD5;</li>
+</ol>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; www.huweihuang.com 2017-2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Updated at 
+2026-05-24 08:58:18
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="java-flow-control.html" class="navigation navigation-prev " aria-label="Previous page: 流程控制语句">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="java-interface.html" class="navigation navigation-next " aria-label="Next page: java接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"类和实例","level":"3.1","depth":1,"next":{"title":"java接口","level":"3.2","depth":1,"path":"java-interface.md","ref":"java-interface.md","articles":[]},"previous":{"title":"流程控制语句","level":"2.1","depth":1,"path":"java-flow-control.md","ref":"java-flow-control.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","codesnippet","splitter","page-toc-button","image-captions","editlink","back-to-top-button","-lunr","-search","search-plus","github-buttons@2.1.0","favicon@^0.0.2","tbfed-pagefooter@^0.0.1","3-ba","theme-default","-highlight","prism","prism-themes","sitemap-general","ga","donate"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © www.huweihuang.com 2017-2018","modify_label":"Updated at ","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-okaidia.css"]},"disqus":{"shortName":"huweihuang"},"github":{"url":"https://github.com/huweihuang"},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/huweihuang/java-notes/blob/master/"},"splitter":{},"donate":{"alipay":"https://res.cloudinary.com/dqxtn0ick/image/upload/v1551599640/blog/donate/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://res.cloudinary.com/dqxtn0ick/image/upload/v1551599472/blog/donate/wechatpay.jpg","wechatText":"微信打赏"},"codesnippet":{},"sitemap-general":{"prefix":"https://www.huweihuang.com/java-notes/"},"fontsettings":{"theme":"white","family":"sans","size":2},"favicon":{"shortcut":"images/favicon.ico","bookmark":"images/favicon.ico","appleTouch":"images/favicon.ico","appleTouchMore":{"120x120":"images/favicon.ico","180x180":"images/favicon.ico"}},"page-toc-button":{},"back-to-top-button":{},"prism-themes":{},"github-buttons":{"repo":"huweihuang/java-notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"e146d71b77957235bba1e709d930f62e"},"ga":{"configuration":"auto","token":"UA-114718458-2"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-plus":{},"image-captions":{"caption":"图片 - _CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"胡伟煌","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"title":"Java 学习笔记","language":"zh-hans","links":{"sidebar":{"胡伟煌的博客":"https://www.huweihuang.com"}},"gitbook":"*","description":"Java 学习笔记"},"file":{"path":"java-class.md","mtime":"2026-05-24T00:58:18.125Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-05-24T03:15:25.335Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-editlink/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
