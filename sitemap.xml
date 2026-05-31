@@ -7,4 +7,9 @@
 <url> <loc>https://www.huweihuang.com/java-notes/basic/java-flow-control.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.huweihuang.com/java-notes/oop/java-class.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>https://www.huweihuang.com/java-notes/oop/java-interface.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.huweihuang.com/java-notes/spring-boot/spring-boot-introduction.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.huweihuang.com/java-notes/spring-boot/spring-boot-annotation.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.huweihuang.com/java-notes/spring-boot/spring-boot-jdbc.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.huweihuang.com/java-notes/spring-boot/spring-boot-jdbc-column.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>https://www.huweihuang.com/java-notes/spring-boot/sping-boot-jdbc-vs-gorm.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
